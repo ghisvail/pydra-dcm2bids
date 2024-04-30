@@ -75,4 +75,4 @@ pythonpath = ["src"]
 testpaths = ["src"]
 
 [tool.ruff.lint]
-ignore = ["FA"]
+ignore = ["FA", "INP001", "A001"]

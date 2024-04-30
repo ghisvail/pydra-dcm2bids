@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path.cwd().parent / "src"))
 
 project = config.name
 author = config.author
-copyright = f"2023, The ARAMIS Lab"
+copyright = "2023, The ARAMIS Lab"
 release = config.version
 
 # -- General configuration ---------------------------------------------------

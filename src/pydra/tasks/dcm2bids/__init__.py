@@ -19,7 +19,6 @@ import os
 import typing as ty
 
 import attrs
-
 import pydra
 
 __all__ = ["Dcm2Bids"]
