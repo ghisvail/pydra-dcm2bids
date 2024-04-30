@@ -2,7 +2,6 @@
 
 [![PyPI - Version][pypi-version]][pypi-project]
 [![PyPI - Python Version][pypi-pyversions]][pypi-project]
-[![PyPI - Downloads][pypi-downloads]][pypi-project]
 ![][status-docs]
 ![][status-test]
 
@@ -14,7 +13,7 @@ Pydra tasks for dcm2bids.
 a set of lightweight abstractions for DAG
 construction, manipulation, and distributed execution.
 
-[`dcm2bids`][dcm2bids] is a tool which facilitates
+[dcm2bids][dcm2bids] is a tool which facilitates
 conversion from DICOM datasets to NIfTI files
 organized as [BIDS][bids].
 
@@ -24,10 +23,10 @@ organized as [BIDS][bids].
 pip install pydra-dcm2bids
 ```
 
-A separate installation of `dcm2bids` and `dcm2niix` is required to use this package.
+A separate installation of dcm2bids and dcm2niix is required to use this package.
 Please review the following [instructions][dcm2bids-install].
 
-`dcm2bids` can be installed alongside `pydra-dcm2bids` with:
+dcm2bids can be installed alongside pydra-dcm2bids with:
 
 ```console
 pip install 'pydra-dcm2bids[all]'
@@ -67,7 +66,7 @@ hatch run test:no-cov
 To fix linting issues:
 
 ```console
-hatch run lint:fix
+hatch run fmt
 ```
 
 To check the documentation:
@@ -78,7 +77,7 @@ hatch run docs:serve --open-browser
 
 ## License
 
-`pydra-dcm2bids` is distributed under the terms of the [Apache License, Version 2.0][license].
+This project is distributed under the terms of the [Apache License, Version 2.0][license].
 
 [pypi-project]: https://pypi.org/project/pydra-dcm2bids
 
@@ -86,11 +85,9 @@ hatch run docs:serve --open-browser
 
 [pypi-pyversions]: https://img.shields.io/pypi/pyversions/pydra-dcm2bids.svg
 
-[pypi-downloads]: https://static.pepy.tech/badge/pydra-dcm2bids
+[status-docs]: https://github.com/ghisvail/pydra-dcm2bids/actions/workflows/docs.yaml/badge.svg
 
-[status-docs]: https://github.com/aramis-lab/pydra-dcm2bids/actions/workflows/docs.yaml/badge.svg
-
-[status-test]: https://github.com/aramis-lab/pydra-dcm2bids/actions/workflows/test.yaml/badge.svg
+[status-test]: https://github.com/ghisvail/pydra-dcm2bids/actions/workflows/test.yaml/badge.svg
 
 [pydra]: https://pydra.readthedocs.io/
 

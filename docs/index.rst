@@ -9,7 +9,7 @@ construction, manipulation, and distributed execution.
 conversion from DICOM datasets to NIfTI files
 organized as `BIDS`_.
 
-``pydra-dcm2bids`` provides Pydra tasks
+pydra-dcm2bids provides Pydra tasks
 to construct BIDS datasets from DICOM files.
 
 .. toctree::
