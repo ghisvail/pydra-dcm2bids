@@ -1,4 +1,4 @@
-name: publish
+name: release
 
 on:
   release:
@@ -6,20 +6,21 @@ on:
 
 permissions:
   contents: read
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  publish:
+  pypi:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Install build
-        run: pip install build
       - name: Build distribution
-        run: python -m build .
+        run: pipx run build
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          password: ${{ secrets.PYPI_API_TOKEN }}
